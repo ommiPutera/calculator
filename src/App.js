@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "./components/Button";
+import { FaEquals, FaMinus } from 'react-icons/fa'
+import { MdBackspace } from 'react-icons/md'
 import "./App.css";
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
       setCurrent(current + symbol);
       setResault(calcCurrent);
     }
+    if(symbol == "-"){
+      symbol = <FaMinus />
+    }
     setCurrent(current + symbol);
   };
 
@@ -40,7 +45,7 @@ function App() {
 
   const buttons = [
     { symbol: "C", cols: 2, action: reset },
-    { symbol: "Hapus", cols: 1, action: erase },
+    { symbol: <MdBackspace />, cols: 1, action: erase },
     { symbol: "/", cols: 1, action: addToCurrent },
     { symbol: "7", cols: 1, action: addToCurrent },
     { symbol: "8", cols: 1, action: addToCurrent },
@@ -56,7 +61,7 @@ function App() {
     { symbol: "+", cols: 1, action: addToCurrent },
     { symbol: "0", cols: 2, action: addToCurrent },
     { symbol: ".", cols: 1, action: addToCurrent },
-    { symbol: "=", cols: 1, action: calculate },
+    { symbol: <FaEquals />, cols: 1, action: calculate },
   ];
 
   return (
