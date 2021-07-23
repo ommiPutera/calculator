@@ -4,8 +4,8 @@ import "./style/button.css";
 
 function Button(props) {
   return (
-    <div className={`column-${props.cols} colJustify`}>
-      <button className="calcButton" onClick={props.action}>
+    <div className={`column-${props.cols} colJustify color-${props.color}`}>
+      <button className={`calcButton calcButton-${props.color}`} onClick={props.action}>
         {props.symbol == "/" ? (
           <FaDivide />
         ) : props.symbol == "+" ? (

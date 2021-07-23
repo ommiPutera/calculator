@@ -1,31 +1,49 @@
 .calcButton {
   border: none;
   background: none;
-  color: white;
+  color: rgb(197, 197, 197);
+  border: solid 1px rgb(67, 67, 67);
+  font-size: 15px;
+  font-weight: 600;
   width: 100%;
   height: 80px;
+  cursor: pointer;
+}
+
+.calcButton-3 {
+  color: rgb(31, 31, 31)
 }
 
 .column-1 {
   width: 25%;
   float: left;
-  background-color: blue;
 }
 
 .column-2 {
   float: left;
   width: 50%;
-  background-color: brown;
 }
 
 .column-3 {
   float: left;
   width: 75%;
-  background-color: red;
 }
 
 .colJustify {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.color-1 {
+  background-color: rgb(77, 77, 77);
+}
+
+.color-2 {
+  background-color: rgb(53, 53, 53);
+}
+
+.color-3 {
+  background-color: orange;
+  color: black !important;
 }

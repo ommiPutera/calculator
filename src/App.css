@@ -1,5 +1,5 @@
 .calcContainer {
-  margin: 4% 37%;
+  margin: 3% 37%;
 }
 
 .calcContent {
@@ -7,8 +7,9 @@
 }
 
 .calcResult {
-  background-color: whitesmoke;
-  height: 24%;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  height: 30%;
   padding: 15px;
   padding-right: 25px;
 }
@@ -17,16 +18,17 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 50%;
-  font-size: 20px;
-  color: rgb(169, 169, 169);
+  height: 20%;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .result {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 50%;
-  font-size: 30px;
+  height: 60%;
+  font-size: 18px;
   font-weight: 500;
+  color: rgb(169, 169, 169);
 }
